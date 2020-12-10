@@ -75,50 +75,50 @@
                     <h2 class="images-slogan">Showcase your work like a pro.</h2>
                     <p class="images-text">Contact me if you like my work</p>
                 </div>
-                <div class="images">
+                <div class="images"> 
                     <div class="image">
-                        <img src="img/Normal.png" alt="" class="images-responsive">
+                        <img src="img/bikes.jpg" alt="" class="images-responsive">        
                         <div class="image_effect">
-                            <div class="hover-icon"><img src="img/hover-icon-1.png" alt=""></div>
+                            <a class="hover-icon" href="img/bikes.jpg"><img src="img/hover-icon-1.png" alt=""></a>
                             <div class="hover-icon-p"><img src="img/hover-icon-2.png" alt=""></div>
                         </div>
                     </div>
                     <div class="image">
-                        <img src="img/Image 02.png" alt="" class="images-responsive">
+                        <img src="img/girl1.jpg" alt="" class="images-responsive">
                         <div class="image_effect">
-                            <div class="hover-icon"><img src="img/hover-icon-1.png" alt=""></div>
+                            <a class="hover-icon" href="img/girl1.jpg"><img src="img/hover-icon-1.png" alt=""></a>
                             <div class="hover-icon-p"><img src="img/hover-icon-2.png" alt=""></div>
                         </div>
                     </div>
                     <div class="image">
-                        <img src="img/Image 03.png" alt="" class="images-responsive">
+                        <img src="img/komp.jpg" alt="" class="images-responsive">
                         <div class="image_effect">
-                            <div class="hover-icon"><img src="img/hover-icon-1.png" alt=""></div>
+                            <a class="hover-icon" href="img/komp.jpg"><img src="img/hover-icon-1.png" alt=""></a>
                             <div class="hover-icon-p"><img src="img/hover-icon-2.png" alt=""></div>
                         </div>
                     </div>
                     <div class="image">
-                        <img src="img/Image 04.png" alt="" class="images-responsive">
+                        <img src="img/kod.jpg" alt="" class="images-responsive">
                         <div class="image_effect">
-                            <div class="hover-icon"><img src="img/hover-icon-1.png" alt=""></div>
+                            <a class="hover-icon" href="img/kod.jpg"><img src="img/hover-icon-1.png" alt=""></a>
                             <div class="hover-icon-p"><img src="img/hover-icon-2.png" alt=""></div>
                         </div>
                     </div>
                     <div class="image">
-                        <img src="img/Image 05.png" alt="" class="images-responsive">
+                        <img src="img/design.jpg" alt="" class="images-responsive">
                         <div class="image_effect">
-                            <div class="hover-icon"><img src="img/hover-icon-1.png" alt=""></div>
+                            <a class="hover-icon" href="img/design.jpg"><img src="img/hover-icon-1.png" alt=""></a>
                             <div class="hover-icon-p"><img src="img/hover-icon-2.png" alt=""></div>
                         </div>
                     </div>
                     <div class="image">
-                        <img src="img/Image 06.png" alt="" class="images-responsive">
+                        <img src="img/davisuko.jpg" alt="" class="images-responsive">
                         <div class="image_effect">
-                            <div class="hover-icon"><img src="img/hover-icon-1.png" alt=""></div>
+                            <a class="hover-icon"  href="img/davisuko.jpg"><img src="img/hover-icon-1.png" alt=""></a>
                             <div class="hover-icon-p"><img src="img/hover-icon-2.png" alt=""></div>
-                        </div>
+                    
+                        </div>  
                     </div>
-                </div>
             </div>
         </section>
         <section class="section-form">
@@ -156,6 +156,22 @@
             </div>
         </footer>
     </div>
-
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function() {
+	$('.images').magnificPopup({
+		delegate: '.hover-icon',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		}
+	});
+});
+    </script>
 </body>
 </html>
